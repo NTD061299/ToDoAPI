@@ -1,3 +1,4 @@
+TODOAPI PROJECT
 Lệnh để tải thư viện và chạy ứng dụng
 Để nhanh chóng trong việc cài đặt các thư viện, ta chỉ cần install file requirements.txt trong terminal
 << pip install -r requirements.txt
