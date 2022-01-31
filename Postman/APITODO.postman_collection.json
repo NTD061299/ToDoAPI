@@ -1,0 +1,483 @@
+{
+	"info": {
+		"_postman_id": "c4239179-8dc8-48c9-b27a-abf61377a436",
+		"name": "APITODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET CLIENT_ID, CLIENT_SECRET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer EpnyznxUmlhoq5M4uC6eg3vNAOt0vj",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "admin12345",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "jFUQJbutwKZOSlOJn0YeZOi2IYrBNonhjz5qJOEU",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "fLCBV2Z5u1lqBEBniSRrBNRe6CFs6G8erA1b7COqVNG2MDeqIyGJ9DyaCaAO4Uem50XzdQjqxfpABdGifz6ZyYDcn66MoQKdkJGGlCpDcBpFVl0LTfcoevWCVLVeNZiA",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is test",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "new",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth2-info/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth2-info",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API SIGN-IN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XZ344u9Ss8PgcF7aMV30sdb3YfhC1s",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin12345",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "jFUQJbutwKZOSlOJn0YeZOi2IYrBNonhjz5qJOEU",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "fLCBV2Z5u1lqBEBniSRrBNRe6CFs6G8erA1b7COqVNG2MDeqIyGJ9DyaCaAO4Uem50XzdQjqxfpABdGifz6ZyYDcn66MoQKdkJGGlCpDcBpFVl0LTfcoevWCVLVeNZiA",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/o/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"o",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API SIGN_UP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "quicktest",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test12345",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Quick",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "quicktest@ex.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/sigh_up/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"sigh_up",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API4 UPDATE_TO_DO",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "br9zhyBvJZbem63BZkjUV4DBJ315KN",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Update bài test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Update bài test",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "New",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "completed_date",
+							"value": "2022-01-31T04:12:21.141Z",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/todoes/32/update-to-do/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"todoes",
+						"32",
+						"update-to-do",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API3 ADD_TO_DO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Tạo bài test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Tạo bài test",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "New",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "completed_date",
+							"value": "2022-01-31T04:12:21.141Z",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/todoes/add-to-do/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"todoes",
+						"add-to-do",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API5 REMOVE_TO_DO",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "br9zhyBvJZbem63BZkjUV4DBJ315KN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/todoes/32/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"todoes",
+						"32",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API6 GET_ALL_TO_DO",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "br9zhyBvJZbem63BZkjUV4DBJ315KN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/todoes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"todoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API7 GET_TO_DO_BY_ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "br9zhyBvJZbem63BZkjUV4DBJ315KN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/todoes/27/get-to-do-by-id/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"todoes",
+						"27",
+						"get-to-do-by-id",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API8 GET_ALL_USER",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "br9zhyBvJZbem63BZkjUV4DBJ315KN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/get-all-user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"get-all-user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API10 GET_ALL_TASK_BY_USER",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "br9zhyBvJZbem63BZkjUV4DBJ315KN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/3/get-all-task-by-user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"3",
+						"get-all-task-by-user",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
